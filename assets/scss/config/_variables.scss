@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem; /*56px*/
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --hue: 155;
+  --first-color: hsl(var(--hue), 100%, 18%); /*buttony, sekcja follow us, koszyk przy opcjach*/
+  --first-color-alt: hsl(var(--hue), 100%, 14%); /*hover na buttony i w steps numbers*/
+  --first-color-light: hsl(calc(var(--hue) - 114), 39%, 55%); /*follow us*/
+  --first-color-lighten: hsl(var(--hue), 24%, 92%); /*newsletter*/
+  --title-color: hsl(var(--hue), 4%, 15%); /*all headings, nav opcje, wiekszosc tekstu na stronie*/
+  --text-color: hsl(var(--hue), 4%, 35%); /*zwykly tekst na stronie, nie naglowki*/
+  --text-color-light: hsl(var(--hue), 4%, 55%); /*kolor dla formularza labels i na dole all rights reserved*/
+  --body-color: hsl(var(--hue), 0%, 100%); /*white*/
+  --container-color: #FFF; /*white*/
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /* Responsive typography */
+  @media screen and (min-width: 968px) {
+    :root {
+      --big-font-size: 2.5rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+    }
+  }
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes Bottom ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}

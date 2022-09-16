@@ -1,0 +1,361 @@
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 399.9px){
+    .container{
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+
+    .home{
+        &__img{
+            width: 240px;
+        }
+        &__title{
+            font-size: var(--h1-font-size);
+        }
+        &__social{
+            top: 4.4rem;
+            right: -1rem;
+
+            &-follow, &-link{
+                font-size: .75rem;
+            }
+        }
+    }
+
+    .nav__menu{
+        width: 68%;
+    }
+
+    .about{
+        &__img{
+            justify-self: center;
+            width: 360px;
+            border-radius: 10px;
+        }
+
+        &__title, &__description{
+            text-align: center;
+        }
+    }
+
+    .steps{
+        &__bg{
+            padding: 2rem 1rem;
+        }
+        &__card{
+            padding: 1.5rem;
+        }
+    }
+
+    .product__container{
+        grid-template-columns: .6fr;
+        justify-content: center;
+    }
+
+    .un{
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 400px){
+    .home{
+        &__img{
+            width: 255px;
+        }
+
+        &__title{
+            font-size: calc(var(--big-font-size)*1.05);
+        }
+
+        &__social{
+            top: 4.4rem;
+            right: -1rem;
+        }
+
+        &__description{
+            margin-bottom: var(--mb-2);
+        }
+    }
+
+    .about{
+        &__img{
+            justify-self: center;
+            width: 380px;
+            border-radius: 10px;
+        }
+
+        &__title, &__description{
+            text-align: center;
+        }
+    }
+
+    .nav__menu{
+        width: 64%;
+    }
+
+    .un{
+        text-align: left;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px){
+    .steps{
+        &__container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .product{
+        &__description{
+            padding: 0 4rem;
+        }
+        &__container{
+            grid-template-columns: repeat(2, 170px);
+            justify-content: center;
+            column-gap: 5rem;
+        }
+    }
+
+    .home{
+        padding: 2rem 0 5rem;
+
+        &__title{
+            font-size: calc(var(--big-font-size)*1.3);
+            margin-bottom: var(--mb-0-5);
+        }
+
+        &__social{
+            top: 5.2rem;
+            right: -1.5rem;
+
+            &-follow{
+                font-size: 1rem;
+
+                &::after{
+                    width: 1rem;
+                    height: 2px;
+                    background-color: var(--first-color-light);
+                    right: -34%;
+                    top: 50%;
+                }
+            }
+
+            &-link{
+                font-size: 1rem;
+            }
+        }
+
+        &__description{
+            margin-bottom: var(--mb-1);
+            font-size: calc(var(--small-font-size) * 1.25);
+        }
+
+        &__img{
+            width: 280px;
+        }
+    }
+
+    .nav__menu{
+        width: 63%;
+    }
+
+    .about{
+        &__img{
+            justify-self: center;
+            width: 420px;
+            border-radius: 10px;
+        }
+
+        &__title, &__description{
+            text-align: center;
+        }
+    }
+
+    .footer__subscribe{
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 767px){
+    body{
+        margin: 0;
+    }
+
+    .nav{
+        height: calc(var(--header-height) + 1.5rem);
+        column-gap: 3rem;
+
+        &__toggle,
+        &__close{
+            display: none;
+        }
+        &__menu{
+            margin-left: auto;
+        }
+        &__list{
+            flex-direction: row;
+            column-gap: 3rem;
+            float: right;
+        }
+    }
+    
+    .home__container,
+    .about__container,
+    .questions__container,
+    .contact__container,
+    .footer__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home{
+        padding: 10rem 0 5rem;
+        
+        &__container{
+            align-items: center;
+        }
+        &__img{
+            width: 280px;
+            order: 1;
+        }
+        &__social{
+            top: 30%;
+        }
+
+        &__title{
+            margin-bottom: var(--mb-1-5);
+        }
+
+        &__description{
+            margin-bottom: var(--mb-1-5);
+        }
+    }
+
+    .about{
+        &__container{
+            column-gap: 3rem;
+            align-items: center;
+        }
+
+        &__title, &__description{
+            text-align: left;
+        }
+
+        &__img{
+            justify-self: center;
+        }
+    }
+    
+    .contact__container{
+        padding-top: 3rem;
+    }    
+
+    .footer{
+        &__container{
+            column-gap: 3rem;
+        }
+        &__subscribe{
+            width: initial;
+        }
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 930px){
+    .about__img{
+        justify-self: left;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section{
+        padding: 8rem 0 1rem;
+
+        &__title, 
+        &__title-center{
+            font-size: var(--h1-font-size);
+        }
+    }
+
+    .home{
+        padding: 11rem 0 5rem;
+
+        &__img{
+            width: 350px;
+        }
+        &__description{
+            padding-right: 7rem;
+        }
+
+        &__social{
+            top: 7.5rem;
+            right: -1.5rem;
+        }
+    }
+
+    .about__img{
+        width: 380px;
+        border-radius: 10px;
+    }
+
+    .steps{
+        &__container{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__bg{
+            padding: 2rem 2.5rem;
+        }
+        &__card-title{
+            font-size: var(--normal-font-size);
+        }
+    }
+
+    .footer{
+        &__logo{
+            font-size: var(--h3-font-size);
+        }
+        &__container{
+            grid-template-columns: 1fr .5fr .5fr .5fr;
+            padding-top: 1rem;
+        }
+        &__copy{
+            margin: 7rem 0 2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .home{
+        &__social{
+            top: 6.5rem;
+            right: -1.2rem;
+            row-gap: 4.5rem;
+
+            &-follow{
+                font-size: var(--small-font-size);
+
+                &::after{
+                    width: 1.5rem;
+                    right: -60%;
+                }
+            }
+            &-link{
+                font-size: 1.15rem;
+            }
+        }
+    }
+
+    .about__container{
+        column-gap: 7rem;
+        align-items: center;
+    }
+
+    .scrollup{
+        right: 3rem;
+    }
+}
