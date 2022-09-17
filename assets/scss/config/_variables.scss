@@ -7,14 +7,14 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 155;
-  --first-color: hsl(var(--hue), 100%, 18%); /*buttony, sekcja follow us, koszyk przy opcjach*/
-  --first-color-alt: hsl(var(--hue), 100%, 14%); /*hover na buttony i w steps numbers*/
-  --first-color-light: hsl(calc(var(--hue) - 114), 39%, 55%); /*follow us*/
-  --first-color-lighten: hsl(var(--hue), 24%, 92%); /*newsletter*/
-  --title-color: hsl(var(--hue), 4%, 15%); /*all headings, nav opcje, wiekszosc tekstu na stronie*/
-  --text-color: hsl(var(--hue), 4%, 35%); /*zwykly tekst na stronie, nie naglowki*/
-  --text-color-light: hsl(var(--hue), 4%, 55%); /*kolor dla formularza labels i na dole all rights reserved*/
-  --body-color: hsl(var(--hue), 0%, 100%); /*white*/
+  --first-color: hsl(var(--hue), 100%, 18%);
+  --first-color-alt: hsl(var(--hue), 100%, 14%);
+  --first-color-light: hsl(calc(var(--hue) - 114), 39%, 55%);
+  --first-color-lighten: hsl(var(--hue), 24%, 92%);
+  --title-color: hsl(var(--hue), 4%, 15%);
+  --text-color: hsl(var(--hue), 4%, 35%);
+  --text-color-light: hsl(var(--hue), 4%, 55%);
+  --body-color: hsl(var(--hue), 0%, 100%);
   --container-color: #FFF; /*white*/
 
   /*========== Font and typography ==========*/
