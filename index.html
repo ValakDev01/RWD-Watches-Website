@@ -17,10 +17,10 @@
     </head>
 <body>
     <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <i class="ri-vip-crown-line nav__logo-icon"></i> Roleks
+    <header class="header" id="header" role="banner">
+        <nav class="nav container" role="navigation" aria-label="social">
+            <a href="#" class="nav__logo" role="button">
+                <i class="ri-vip-crown-line nav__logo-icon" role="img" aria-hidden="false"></i> Roleks
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -40,25 +40,25 @@
                 </ul>
 
                 <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
+                    <i class="ri-close-line" role="button"></i>
                 </div>
             </div>
 
             <div class="nav__btns">
                 <!-- Theme change button -->
-                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <i class="ri-moon-line change-theme" id="theme-button" role="button"></i>
 
                 <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line"></i>
+                    <i class="ri-menu-line" role="button"></i>
                 </div>
             </div>
         </nav>
     </header>
 
     <!--==================== MAIN ====================-->
-    <main class="main">
+    <main class="main" role="main">
         <!--==================== HOME ====================-->
-        <section class="home section container" id="home">
+        <section class="home section container" id="home" aria-label="home section">
             <div class="home__container grid">
                 <img src="assets/img/mainRR.png" alt="" class="home__img">
 
@@ -70,8 +70,8 @@
                         Create incredible watch design for you or your family. 
                         Add fresness to your new ideas with us.
                     </p>
-                    <a href="#about" class="button button--flex">
-                        Explore <i class="ri-arrow-right-line button__icon"></i>
+                    <a href="#about" class="button button--flex" role="button">
+                        Explore <i class="ri-arrow-right-line button__icon" role="img" aria-hidden="true"></i>
                     </a>
                 </div>
 
@@ -80,13 +80,13 @@
 
                     <div class="home__social-links">
                         <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
-                            <i class="ri-facebook-fill"></i>
+                            <i class="ri-facebook-fill" role="img" aria-hidden="true"></i>
                         </a>
                         <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
-                            <i class="ri-instagram-line"></i>
+                            <i class="ri-instagram-line" role="img" aria-hidden="true"></i>
                         </a>
                         <a href="https://twitter.com/" target="_blank" class="home__social-link">
-                            <i class="ri-twitter-fill"></i>
+                            <i class="ri-twitter-fill" role="img" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
         </section>
 
         <!--==================== ABOUT ====================-->
-        <section class="about section container" id="about">
+        <section class="about section container" id="about" aria-label="about section">
             <div class="about__container grid">
                 <img src="assets/img/mainR.png" alt="" class="about__img">
 
@@ -110,28 +110,28 @@
 
                     <div class="about__details">
                         <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            <i class="ri-checkbox-fill about__details-icon" role="img" aria-hidden="true"></i>
                             We always deliver on time.
                         </p>
                         <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            <i class="ri-checkbox-fill about__details-icon" role="img" aria-hidden="true"></i>
                             We give you guides to protect and care for your watches.
                         </p>
                         <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            <i class="ri-checkbox-fill about__details-icon" role="img" aria-hidden="true"></i>
                             We always come over for a check-up after sale.
                         </p>
                     </div>
 
-                    <a href="#" class="button button--flex">
-                        Shop Now <i class="ri-arrow-right-line button__icon"></i>
+                    <a href="#" class="button button--flex" role="button">
+                        Shop Now <i class="ri-arrow-right-line button__icon" role="img" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
         </section>
 
         <!--==================== STEPS ====================-->
-        <section class="steps section container" id="howto">
+        <section class="steps section container" id="howto" aria-label="steps section">
             <div class="steps__bg">
                 <h2 class="section__title-center steps__title">
                     Steps to buy our <br> luxury products
@@ -166,7 +166,7 @@
         </section>
 
         <!--==================== CONTACT ====================-->
-        <section class="contact section container" id="contact">
+        <section class="contact section container" id="contact" aria-label="contact section">
             <div class="contact__container grid">
                 <div class="contact__box">
                     <h2 class="section__title un">
@@ -177,7 +177,7 @@
                         <div class="contact__information">
                             <h3 class="contact__subtitle">Call us for instant support</h3>
                             <span class="contact__description">
-                                <i class="ri-phone-line contact__icon"></i>
+                                <i class="ri-phone-line contact__icon" role="img" aria-hidden="true"></i>
                                 +111 222 333
                             </span>
                         </div>
@@ -185,7 +185,7 @@
                         <div class="contact__information">
                             <h3 class="contact__subtitle">Write us by mail</h3>
                             <span class="contact__description">
-                                <i class="ri-mail-line contact__icon"></i>
+                                <i class="ri-mail-line contact__icon" role="img" aria-hidden="true"></i>
                                 user@email.com
                             </span>
                         </div>
@@ -195,24 +195,24 @@
                 <form action="" class="contact__form">
                     <div class="contact__inputs">
                         <div class="contact__content">
-                            <input type="email" placeholder=" " class="contact__input">
+                            <input type="email" placeholder=" " class="contact__input" aria-label=" ">
                             <label for="" class="contact__label">E-mail</label>
                         </div>
 
                         <div class="contact__content">
-                            <input type="text" placeholder=" " class="contact__input">
+                            <input type="text" placeholder=" " class="contact__input" aria-label=" ">
                             <label for="" class="contact__label">Subject</label>
                         </div>
 
                         <div class="contact__content contact__area">
-                            <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                            <textarea name="message" placeholder=" " class="contact__input" aria-label=" "></textarea>                              
                             <label for="" class="contact__label">Message</label>
                         </div>
                     </div>
 
                     <button class="button button--flex">
                         Send Message
-                        <i class="ri-arrow-right-line button__icon"></i>
+                        <i class="ri-arrow-right-line button__icon" role="img" aria-hidden="true"></i>
                     </button>
                 </form>
             </div>
@@ -220,11 +220,11 @@
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer section container">
+    <footer class="footer section container" role="contentinfo">
         <div class="footer__container grid">
             <div class="footer__content">
                 <a href="#" class="footer__logo">
-                    <i class="ri-vip-crown-line nav__logo-icon"></i> Roleks
+                    <i class="ri-vip-crown-line nav__logo-icon" role="img" aria-hidden="false"></i> Roleks
                 </a>
 
                 <h3 class="footer__title">
@@ -236,7 +236,7 @@
 
                     <button class="button button--flex footer__button">
                         Subscribe
-                        <i class="ri-arrow-right-line button__icon"></i>
+                        <i class="ri-arrow-right-line button__icon" role="img" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
@@ -259,13 +259,13 @@
                     
                     <div class="footer__social">
                         <a href="https://www.facebook.com/" class="footer__social-link">
-                            <i class="ri-facebook-fill"></i>
+                            <i class="ri-facebook-fill" role="img" aria-hidden="true"></i>
                         </a>
                         <a href="https://www.instagram.com/" class="footer__social-link">
-                            <i class="ri-instagram-line"></i>
+                            <i class="ri-instagram-line" role="img" aria-hidden="true"></i>
                         </a>
                         <a href="https://twitter.com/" class="footer__social-link">
-                            <i class="ri-twitter-fill"></i>
+                            <i class="ri-twitter-fill" role="img" aria-hidden="true"></i>
                         </a>
                     </div>
                 </ul>
@@ -289,7 +289,7 @@
     </footer>
     
     <!--=============== SCROLL UP ===============-->
-    <a href="#" class="scrollup" id="scroll-up"> 
+    <a href="#" class="scrollup" id="scroll-up" role="button"> 
         <i class="ri-arrow-up-fill scrollup__icon"></i>
     </a>
 
